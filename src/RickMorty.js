@@ -4,8 +4,6 @@ import '../components/GetData'
 export class RickMorty extends LitElement {
   static get properties() {
     return {
-      url: { type: String },
-      metho:{type:String}
     };
   }
 
@@ -15,7 +13,7 @@ export class RickMorty extends LitElement {
 
   constructor() {
     super();
-    this.title = 'My app';
+    this.addEventListener('ApiData',e=>console.log(e));
   }
 
   render() {
