@@ -1,9 +1,11 @@
 import { LitElement, html, css } from 'lit-element';
+import '../components/GetData'
 
 export class RickMorty extends LitElement {
   static get properties() {
     return {
-      title: { type: String },
+      url: { type: String },
+      metho:{type:String}
     };
   }
 
@@ -17,6 +19,10 @@ export class RickMorty extends LitElement {
   }
 
   render() {
-    return html``;
+    return html`
+    <get-data></get-data>
+    `;
   }
+
+  
 }
