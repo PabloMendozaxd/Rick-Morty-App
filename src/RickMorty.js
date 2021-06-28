@@ -20,9 +20,9 @@ export class RickMorty extends LitElement {
 
   render() {
     return html`
-    <get-data></get-data>
+    <get-data url="https://rickandmortyapi.com/api/character" method="GET"></get-data>
     `;
   }
 
-  
+
 }

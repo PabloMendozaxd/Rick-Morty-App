@@ -9,7 +9,9 @@ export class GetData extends LitElement{
       }
     constructor(){
         super();
-        console.log('Hola desde GetData');
+    }
+    firstUpdated(){
+        this.getData();
     }
     _sendData(data){
         this.dispatchEvent(new CustomEvent('ApiData',{
