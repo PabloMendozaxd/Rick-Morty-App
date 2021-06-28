@@ -32,7 +32,6 @@ export class GetData extends LitElement {
         }
       })
       .then(data => {
-        console.log(data);
         this._sendData(data);
       })
       .catch(error => {
